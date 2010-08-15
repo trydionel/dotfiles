@@ -4,3 +4,6 @@
 [submodule "home/.zsh/libs/zsh-git"]
 	path = home/.zsh/libs/zsh-git
 	url = git://github.com/jcorbin/zsh-git.git
+[submodule "home/.emacs.d/vendor/color-theme-railscasts"]
+	path = home/.emacs.d/vendor/color-theme-railscasts
+	url = git://github.com/olegshaldybin/color-theme-railscasts.git
