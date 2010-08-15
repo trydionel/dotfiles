@@ -1,0 +1,6 @@
+[submodule "home/.zsh/libs/zshkit"]
+	path = home/.zsh/libs/zshkit
+	url = git://github.com/bkerley/zshkit.git
+[submodule "home/.zsh/libs/zsh-git"]
+	path = home/.zsh/libs/zsh-git
+	url = git://github.com/jcorbin/zsh-git.git
