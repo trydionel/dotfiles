@@ -1,4 +1,11 @@
-# zgitinit and prompt_wunjo_setup must be somewhere in your $fpath, see README for more.
+setopt nobeep
+setopt promptsubst
+setopt correct
+
+autoload -U compinit promptinit bashcompinit
+compinit
+promptinit
+bashcompinit
 
 # Grab some essentials from zshkit
 mydir="/Users/jmtucker/.zsh/libs/zshkit"
@@ -8,22 +15,17 @@ for s in 03_zkbd 05_editor 05_ls \
          07_completion 10_bindkey; do
   source $mydir/$s
 done
+source /Users/jmtucker/.aliases
+source /Users/jmtucker/.zsh/set_title_tab
 
-setopt promptsubst
+PATH=~/.bin:$PATH:`brew --prefix git`/libexec/git-core:/usr/local/texlive/2009/bin/universal-darwin/:/usr/local/sbin
+PYTHONPATH=/usr/local/lib/python2.6/site-packages
 
-# Load the prompt theme system
-autoload -U promptinit
-promptinit
-
-# Use the wunjo prompt theme
 prompt wunjo
 
-# rvm-install added line:
-if [[ -s /Users/jmtucker/.rvm/scripts/rvm ]] ; then source /Users/jmtucker/.rvm/scripts/rvm ; fi
-if [[ -r $rvm_path/scripts/completion ]] ; then source $rvm_path/scripts/completion ; fi
-rvm default
-
-# Load aliases
-source /Users/jmtucker/.aliases
-
-PYTHONPATH=/usr/local/lib/python2.6/site-packages
+if [[ -d /Users/jmtucker/.rvm ]]
+then
+  if [[ -s /Users/jmtucker/.rvm/scripts/rvm ]] ; then source /Users/jmtucker/.rvm/scripts/rvm ; fi
+  if [[ -r $rvm_path/scripts/completion ]] ; then source $rvm_path/scripts/completion ; fi
+  rvm default
+fi

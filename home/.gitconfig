@@ -1,0 +1,12 @@
+[user]
+	name = Jeff Tucker
+	email = trydionel@gmail.com
+[pivotal]
+	api-token = 10bfe281783e2bdc2d6592c0ea21e8d5
+	full-name = Jeff Tucker
+	integration-branch = develop
+[color]
+	ui = auto
+[github]
+	user = trydionel
+	token = 1312ba32c18f9bb9cba053b683db2ff5

@@ -120,7 +120,6 @@ prompt_wunjo_setup() {
 	if [ $verbose ]; then
 		PROMPT+="$pc[host]%m$pc[reset] "
 	fi
-	PROMPT+="$pc[rvm][\$(~/.rvm/bin/rvm-prompt)]$pc[reset] "
 	PROMPT+="$pc[path]%(2~.%~.%/)$pc[reset]"
 	PROMPT+="\$(prompt_wunjo_scm_status)"
 	PROMPT+="%(?.. $pc[rc]exited %1v$pc[reset])"
@@ -136,7 +135,8 @@ prompt_wunjo_setup() {
 		RPROMPT+="$p_date "
 	fi
 	RPROMPT+="$pc[user]%n$pc[reset]"
-	RPROMPT+=" $p_line"
+	RPROMPT+=" $pc[rvm]\$(~/.rvm/bin/rvm-prompt)$pc[reset]"
+  # RPROMPT+=" $p_line"
 
 	export PROMPT RPROMPT
 	precmd_functions+='prompt_wunjo_precmd'
