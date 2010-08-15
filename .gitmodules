@@ -40,3 +40,6 @@
 [submodule "home/.vim/bundle/vim-unimpaired"]
 	path = home/.vim/bundle/vim-unimpaired
 	url = git://github.com/tpope/vim-unimpaired.git
+[submodule "home/.vim/bundle/vim-abolish"]
+	path = home/.vim/bundle/vim-abolish
+	url = git://github.com/tpope/vim-abolish.git
