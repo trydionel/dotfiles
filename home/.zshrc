@@ -17,6 +17,7 @@ for s in 03_zkbd 05_editor 05_ls \
 done
 source $HOME/.aliases
 source $HOME/.zsh/set_title_tab
+source $HOME/.bundlerc
 
 PATH=~/.bin:$PATH:`brew --prefix git`/libexec/git-core:/usr/local/texlive/2009/bin/universal-darwin/:/usr/local/sbin
 PYTHONPATH=/usr/local/lib/python2.6/site-packages
