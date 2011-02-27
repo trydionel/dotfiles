@@ -55,3 +55,6 @@
 [submodule "home/.vim/bundle/vim-clojure"]
 	path = home/.vim/bundle/vim-clojure
 	url = git://github.com/vim-scripts/VimClojure.git
+[submodule "home/.vim/bundle/vim-slime"]
+	path = home/.vim/bundle/vim-slime
+	url = git://github.com/jpalardy/vim-slime.git
