@@ -12,9 +12,9 @@ rescue LoadError => e
 end
 
 # Turn on Rails logger
-if ENV.include?('RAILS_ENV') && !Object.const_defined?('RAILS_DEFAULT_LOGGER')
+if Object.const_defined?("Rails")
   require 'logger'
-  RAILS_DEFAULT_LOGGER = Logger.new(STDOUT)
+  Rails.logger = Logger.new(STDOUT)
 end
 
 # Add lib directory to the LOAD_PATH

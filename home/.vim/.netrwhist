@@ -1,5 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/Users/jtucker/src/argus.git'
-let g:netrw_dirhist_2='/Users/jtucker/src/argus.git/vendor/rails'
-let g:netrw_dirhist_3='/Users/jtucker/src/argus.git'
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/jtucker/src/reporting'
+let g:netrw_dirhist_2='/Users/jtucker/.rvm/gems/ruby-1.9.3-p125/gems/damballa-cavalry-0.3.32/lib/cavalry'
+let g:netrw_dirhist_3='/Users/jtucker/src/argus'
+let g:netrw_dirhist_4='/Users/jtucker/Downloads/debian'
+let g:netrw_dirhist_5='/Users/jtucker/.bin'
+let g:netrw_dirhist_6='/Applications/pentaho4.8/server/biserver-ee/pentaho-solutions/system/analyzer'
+let g:netrw_dirhist_7='/Users/jtucker/src/argus'
+let g:netrw_dirhist_8='/Users/jtucker/src/quickinstall.git'

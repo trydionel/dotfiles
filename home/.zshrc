@@ -1,11 +1,12 @@
 setopt nobeep
 setopt promptsubst
 setopt correct
+setopt histignorespace
 
-autoload -U compinit promptinit bashcompinit
-compinit
+bindkey -e
+
+autoload -U compinit promptinit
 promptinit
-bashcompinit
 
 # Grab some essentials from zshkit
 mydir="$HOME/.zsh/libs/zshkit"
@@ -19,14 +20,18 @@ source $HOME/.aliases
 source $HOME/.zsh/set_title_tab
 source $HOME/.bundlerc
 
-PATH=~/.bin:$PATH:`brew --prefix git`/libexec/git-core:/usr/local/texlive/2009/bin/universal-darwin/:/usr/local/sbin
+PATH=~/.bin:/usr/local/bin:$PATH
+PATH=$PATH:`brew --prefix git`/libexec/git-core:/usr/local/texlive/2009/bin/universal-darwin/:/usr/local/sbin:/usr/local/lib/node_modules/:/usr/local/lib/node_modules
 PYTHONPATH=/usr/local/lib/python2.6/site-packages
+export NODE_PATH=/usr/local/lib/node_modules:/usr/local/lib/node
 
-prompt wunjo
+#prompt wunjo
 
 if [[ -d $HOME/.rvm ]]
 then
   if [[ -s $HOME/.rvm/scripts/rvm ]] ; then source $HOME/.rvm/scripts/rvm ; fi
-  if [[ -r $rvm_path/scripts/completion ]] ; then source $rvm_path/scripts/completion ; fi
   rvm default
 fi
+
+fpath=(~/.zsh/Completion $fpath)
+compinit

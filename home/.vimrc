@@ -4,7 +4,7 @@
 
 filetype off
 
-call pathogen#runtime_append_all_bundles()
+call pathogen#infect()
 
 set number
 set ruler
@@ -33,14 +33,21 @@ set wildignore+=*.o,*.obj,.git,*.rbc
 " Status bar
 set laststatus=2
 
+" Turn off help!
 map <f1> <ESC>
+imap <F1> <ESC>
+
 map <f2> :NERDTreeToggle<CR>
 
 " Ruby mappings
 au FileType ruby map <f5> :Rake<CR>
+au FileType ruby map <f6> :.Rake<CR>
 
 filetype plugin indent on
 
-"Directories for swp files
+" Directories for swp files
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
+
+" Syntax mappings for JavaScript templates
+autocmd BufNewFile,BufRead *.ejs setf html.eruby
