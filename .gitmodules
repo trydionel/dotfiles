@@ -70,3 +70,9 @@
 [submodule "home/.vim/bundle/syntastic"]
 	path = home/.vim/bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
+[submodule "home/.vim/bundle/csv.vim"]
+	path = home/.vim/bundle/csv.vim
+	url = git://github.com/chrisbra/csv.vim.git
+[submodule "home/.vim/bundle/dispatch.vim"]
+	path = home/.vim/bundle/dispatch.vim
+	url = git://github.com/tpope/vim-dispatch.git
