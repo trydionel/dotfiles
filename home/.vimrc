@@ -2,9 +2,33 @@
 " - https://github.com/carlhuda/janus/blob/master/vimrc
 " - http://amix.dk/vim/vimrc.html
 
+set nocompatible
 filetype off
 
-call pathogen#infect()
+" Plugins
+set rtp+=~/.vim/bundle/vundle.vim
+call vundle#rc()
+
+Bundle 'gmarik/vundle.vim'
+Bundle 'tpope/vim-repeat'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-abolish'
+Bundle 'tpope/vim-vividchalk'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-unimpaired'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'mileszs/ack.vim'
+Bundle 'scrooloose/syntastic'
+Bundle 'groenewege/vim-less'
+Bundle 'Shougo/unite.vim'
+Bundle 'ap/vim-css-color'
+Bundle 'bling/vim-airline'
+Bundle 'wting/rust.vim'
+Bundle 'pangloss/vim-javascript'
+Bundle 'leafgarland/typescript-vim'
+Bundle 'fatih/vim-go'
+Bundle 'mxw/vim-jsx'
 
 set number
 set ruler
